@@ -1,16 +1,16 @@
 import React, { Component, Fragment } from 'react'
 import"../assets/css/custom.css"
-import {Container,Navbar,Form,FormControl,Button} from'react-bootstrap'
+import {Container,Col,Navbar,Form,FormControl,Button} from'react-bootstrap'
 import Logo from'../assets/images/ctp.png'
 import"../assets/css/fontawesome.css"
 export class TopNavbar extends Component {
   render() {
     return (
     <Fragment>
-    <Navbar expand="lg" variant="light" className="navbar" >
+    <Navbar fixed="top" expand="lg" variant="light" className="navbar" >
 
       <Container fluid={true}>
-
+      <Col lg={3} md={4} sm={12} xs={12}>
       <Navbar.Brand href="#home">
         <img
           alt=""
@@ -21,8 +21,10 @@ export class TopNavbar extends Component {
         />{' '}
       Creative Team
       </Navbar.Brand>
+</Col>
 
 
+<Col lg={4} md={4} sm={12} xs={12}>
       <Form className="d-flex">
         <FormControl
           type="search"
@@ -32,7 +34,7 @@ export class TopNavbar extends Component {
         />
         <a className="Search-btn"><i className="fa fa-search"></i></a>
       </Form>
-
+</Col>
 
 
       <a className="cart-btn"><i className="fa fa-shopping-cart"></i> items 0 </a>
@@ -42,7 +44,7 @@ export class TopNavbar extends Component {
       <a  className='user-icon'  herf=""><i className="fa h4 fa-address-card" ></i> </a>
 
 
-      
+
       </Container>
     </Navbar>
     </Fragment>
