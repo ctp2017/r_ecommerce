@@ -10,8 +10,9 @@ export class TopNavbar extends Component {
     <Fragment>
 
    
-    <Navbar expand="lg" variant="light" bg="light">
+    <Navbar expand="lg" variant="light" className="navbar" >
       <Container fluid={true}>
+      
       <Navbar.Brand href="#home">
         <img
           alt=""
@@ -32,19 +33,19 @@ export class TopNavbar extends Component {
           className="me-0"
           aria-label="Search"
         />
-        <Button variant="outline-success"><i className="fa fa-search"></i></Button>
+        <a className="Search-btn"><i className="fa fa-search"></i></a>
       </Form>
 
-      <Button variant="outline-success"><i className="fa fa-shopping-cart"></i> items 0 </Button>
+      <a className="cart-btn"><i className="fa fa-shopping-cart"></i> items 0 </a>
 
 
-      <a herf=""><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger">0</span></sup>  </a>
+      <a  herf=""><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger">0</span></sup>  </a>
 
       <a herf=""><i className="fa h4 fa-bell"></i><sup><span className="badge text-white bg-danger">8</span></sup>  </a>
     
 
-      <a herf=""><i className="fa h4 fa-share" ></i> </a>
-      <a herf=""><i className="fa h4 fa-address-card" ></i> </a>
+      <a className='user-icon'  herf=""><i className="fa h4 fa-share" ></i> </a>
+      <a  className='user-icon'  herf=""><i className="fa h4 fa-address-card" ></i> </a>
      
      
 
