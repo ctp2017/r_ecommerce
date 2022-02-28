@@ -7,7 +7,7 @@ export class TopNavbar extends Component {
   render() {
     return (
     <Fragment>
-    <Navbar fixed="top" expand="lg" variant="light" className="navbar" >
+    <Navbar  variant="light" className="navbar" >
 
       <Container fluid={true}>
       <Col lg={3} md={4} sm={12} xs={12}>
@@ -40,7 +40,7 @@ export class TopNavbar extends Component {
       <a className="cart-btn"><i className="fa fa-shopping-cart"></i> items 0 </a>
       <a  herf=""><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger">0</span></sup>  </a>
       <a herf=""><i className="fa h4 fa-bell"></i><sup><span className="badge text-white bg-danger">8</span></sup>  </a>
-      <a className='user-icon'  herf=""><i className="fa h4 fa-share" ></i> </a>
+      <a className='user-icon'  herf=""><i className="fa fa-share" ></i> </a>
       <a  className='user-icon'  herf=""><i className="fa h4 fa-address-card" ></i> </a>
 
 
