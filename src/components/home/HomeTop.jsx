@@ -6,7 +6,7 @@ export class HomeTop extends Component {
   render() {
     return (
 <Fragment>
-<Container>
+<Container className="p-0 pt-2" fluid={true} >
 <Row>
 <Col lg={9} md={9} sm={12}>
 <HomeSlider/>
