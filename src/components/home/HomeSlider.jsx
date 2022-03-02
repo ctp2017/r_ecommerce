@@ -14,33 +14,26 @@ export class HomeSlider extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed:1500,
+    
     };
 
 
 
     return (
       <div>
-      <h2> Single Item</h2>
+      
       <Slider {...settings}>
         <div>
-          <h3>1</h3>
+        <img className="slider_image"  src="https://minskhelp.com/wp-content/uploads/slider2/image-slider-with-thumbnail1.jpeg"/>
         </div>
+
         <div>
-          <h3>2</h3>
+        <img className="slider_image"  src="https://media.gettyimages.com/photos/woman-with-laptop-camera-digital-tablet-and-parcel-with-clothes-picture-id670884781"/>
         </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
+      
       </Slider>
     </div>
     )

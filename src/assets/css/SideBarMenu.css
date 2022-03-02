@@ -79,4 +79,15 @@
 
  }
 
+
+ .slider_image{
+    width: 100% !important;
+    height: 340px;
+
+ }
+
+ .slick-dots {
+    top: 90% ;
+    
+}
  
