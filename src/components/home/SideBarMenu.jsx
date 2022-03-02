@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../../assets/css/custom.css'
+import Cat1 from '../../assets/images/categories/lights.png'
 export class SideBarMenu extends Component {
 
 
@@ -45,7 +46,7 @@ Menu(){
                <div className="accordionMenuDiv">
                     <div className="accordionMenuDivInside">
                          <button className="accordion">
-                              <img className="accordionMenuIcon" src="test.png" /> Living Room
+                              <img className="accordionMenuIcon" src={Cat1} /> Living Room
                          </button>
                          <div className="panel">
                               <ul>
