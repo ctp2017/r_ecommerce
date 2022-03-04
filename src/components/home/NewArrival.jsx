@@ -5,6 +5,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 export class NewArrival extends Component {
+
+
+constructor(){
+     super();
+
+     this.next=this.next.bind(this);
+     this.previous=this.previous.bind(this)
+
+}
+
+
+
+     next(){
+          this.slider.slickNext();
+     }
+     previous(){
+          this.slider.slickPrev();
+     }
+
+
+
      render() {
           const settings = {
                dots: false,
@@ -18,11 +39,17 @@ export class NewArrival extends Component {
           return (
                <Fragment>
                     <Container className="text-center" fluid={true}>
-                         <div className="section-title text-center mb-55"><h2> New Arrival</h2>
+                         <div className="section-title text-center mb-55"><h2> New Arrival    &nbsp;
+                         
+                         <a className="btn btn-sm ml-2 site-btn"  onClick={this.previous} ><i className="fa fa-angle-left"></i></a>
+                         &nbsp;
+                         <a className="btn btn-sm ml-2 site-btn"  onClick={this.next}  ><i className="fa fa-angle-right"></i></a>
+                         
+                         </h2>
                               <p>Some Of Our Exclusive Collection, You May Like</p>
                          </div>
                          <Row>
-                              <Slider {...settings}>
+                              <Slider ref={c=>(this.slider=c)}  {...settings}>
                                    <div>
                                         <Card className="image-box card" >
                                              <img className="center" src="http://127.0.0.1:8000/upload/product/1724905152389272.jpeg" />
