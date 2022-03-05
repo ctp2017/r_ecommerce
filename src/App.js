@@ -5,6 +5,7 @@ import HomeTop from './components/home/HomeTop'
 import Categories from './components/home/Categories'
 import NewArrival from './components/home/NewArrival'
 import TopNavbar from './components/TopNavbar'
+import Collection from './components/home/Collection'
 export class App extends Component {
   render() {
     return (
@@ -14,6 +15,8 @@ export class App extends Component {
     <HomeTop/>
   <Categories/>
   <NewArrival/>
+
+  <Collection/>
    
     
     </Fragment>
