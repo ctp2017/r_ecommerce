@@ -6,14 +6,14 @@ import TopNavbar from './components/TopNavbar'
 
 import Footer from './components/common/Footer'
 import HomePage from './pages/HomePage'
-import ContactPage from './pages/ContactPage'
 export class App extends Component {
   render() {
     return (
       <Fragment>
         <TopNavbar />
 
-      <ContactPage/>
+        <HomePage/>
+
 
 
         <Footer />
