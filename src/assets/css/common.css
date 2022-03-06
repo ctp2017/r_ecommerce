@@ -102,3 +102,33 @@
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
 }
+
+
+.section-title-login{
+
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #051b35;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+
+
+}
+
+.section-sub-title{
+
+    color: #212121;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+
+
+}
+
+.onboardForm{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 90%;
+
+}
