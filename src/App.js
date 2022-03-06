@@ -8,13 +8,14 @@ import Footer from './components/common/Footer'
 import HomePage from './pages/HomePage'
 import ContactPage from './pages/ContactPage'
 import FavoratePage from './pages/FavoratePage'
+import NotificationPage from './pages/NotificationPage'
 export class App extends Component {
   render() {
     return (
       <Fragment>
         <TopNavbar />
 
-    <FavoratePage/>
+  <NotificationPage/>
 
 
 
