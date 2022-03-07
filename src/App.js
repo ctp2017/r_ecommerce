@@ -10,13 +10,14 @@ import ContactPage from './pages/ContactPage'
 import FavoratePage from './pages/FavoratePage'
 import NotificationPage from './pages/NotificationPage'
 import CartListPage from './pages/CartListPage'
+import OrderListPage from './pages/OrderListPage'
 export class App extends Component {
   render() {
     return (
       <Fragment>
         <TopNavbar />
         
-<CartListPage/>
+     <OrderListPage/>
 
 
 
