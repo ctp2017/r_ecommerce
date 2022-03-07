@@ -136,3 +136,19 @@
 .TopSection{
     margin-top: 70px;
 }
+
+.cart-product-img{
+
+    width: 150px;
+    height: 150px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+.product-name{
+    color: #212121;
+     font-size: 20px;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-weight: 400; 
+}
