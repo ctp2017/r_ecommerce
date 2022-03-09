@@ -15,13 +15,14 @@ import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
 import ForgetPasswordPage from './pages/ForgetPasswordPage'
 import ResetPasswordPage from './pages/ResetPasswordPage'
+import ProductCategoryPage from './pages/ProductCategoryPage'
 export class App extends Component {
   render() {
     return (
       <Fragment>
         <TopNavbar />
         
- <ResetPasswordPage/>
+<ProductCategoryPage/>
 
 
 
