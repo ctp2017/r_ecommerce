@@ -152,3 +152,16 @@
      font-family: 'Roboto Condensed', sans-serif;
      font-weight: 400; 
 }
+
+
+.onboardForm{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 90%;
+} 
+
+.onboardBanner{
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+}
