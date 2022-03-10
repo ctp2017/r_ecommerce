@@ -10,6 +10,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
+    "react-inner-image-zoom": "^3.0.0",
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-inner-image-zoom": "^3.0.0"
   }
 }

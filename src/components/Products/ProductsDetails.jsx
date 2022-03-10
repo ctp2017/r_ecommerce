@@ -1,6 +1,9 @@
 import React, { Component, Fragment} from 'react'
 import { Container ,Row, Col } from 'react-bootstrap'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
+
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
+import InnerImageZoom from 'react-inner-image-zoom';
 export class ProductsDetails extends Component {
      render() {
           return (
@@ -38,7 +41,9 @@ export class ProductsDetails extends Component {
                                                   </Col>
                                              </Col>
                                              <Col md={10} lg={10} sm={12} xs={12} >
-                                                  <img  className="main-image" src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
+                                                
+
+                                                  <InnerImageZoom zoomType={"hover"} zoomScale={1.5} className="main-image" src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" zoomSrc="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" zoomSrc="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
                                              </Col>
                                         </Row>
                                    </Col>
