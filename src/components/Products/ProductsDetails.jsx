@@ -25,20 +25,20 @@ export class ProductsDetails extends Component {
                                         <Row className="p-2">
                                              <Col md={2} lg={2} sm={12} xs={12} >
                                                   <Col className="p-0 m-0" >
-                                                       <img src="1.jpg" />
+                                                       <img className="smallimage product-sm-img"  src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
                                                   </Col>
                                                   <Col className="p-0 m-0" md={12} lg={12} sm={3} xs={3}>
-                                                       <img src="2.jpg" />
+                                                  <img className="smallimage product-sm-img"  src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
                                                   </Col>
                                                   <Col className="p-0 m-0" md={12} lg={12} sm={3} xs={3}>
-                                                       <img src="3.jpg" />
+                                                  <img className="smallimage product-sm-img"  src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
                                                   </Col>
                                                   <Col className="p-0 m-0" md={12} lg={12} sm={3} xs={3}>
-                                                       <img src="4.jpg" />
+                                                  <img className="smallimage product-sm-img"  src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
                                                   </Col>
                                              </Col>
                                              <Col md={10} lg={10} sm={12} xs={12} >
-                                                  <img src="main.jpg" />
+                                                  <img  className="main-image" src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
                                              </Col>
                                         </Row>
                                    </Col>
@@ -96,7 +96,7 @@ export class ProductsDetails extends Component {
                               <Row>
                                    <Col className="" md={6} lg={6} sm={12} xs={12}>
                                         <h6 className="mt-2">DETAILS</h6>
-                                        <p> long_description </p>
+                                        <p> Bank Offer10% off on Punjab National Bank Cards, up to $1500. On Orders of $5000 and aboveT&C Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth $100*Know More Partner OfferBuy this product and get upto $500 off on Flipkart FurnitureKnow More </p>
                                    </Col>
                                    <Col className="" md={6} lg={6} sm={12} xs={12}>
                                        review 

@@ -176,3 +176,26 @@
     border-radius: 10px;
 
 }
+
+.smallimage{
+    height: 120px;
+    margin-top: 3px;
+    margin-left: 3px;
+
+}
+
+.product-sm-img{
+    width: 120%;
+}
+
+.product-sm-img:hover{
+    cursor: pointer;
+  
+}
+
+.main-image{    
+    width: 90%;
+    height: 499px;
+    margin-left: 10px; 
+   
+ }
