@@ -1,15 +1,35 @@
 import React, { Component, Fragment} from 'react'
 import { Container ,Row, Col } from 'react-bootstrap'
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
-
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import InnerImageZoom from 'react-inner-image-zoom';
+import main_img from '../../assets/images/products/product1/1.jpeg'
+import one_img from '../../assets/images/products/product1/2.jpeg'
+import two_img from '../../assets/images/products/product1/3.jpeg'
+import three_img from '../../assets/images/products/product1/4.jpeg'
+import four_img from '../../assets/images/products/product1/5.jpeg'
 export class ProductsDetails extends Component {
+     
+     constructor(){
+          super();
+          this.state={
+               previewImg: "0"
+          }
+     }
+
+     imgOnClick = (event) => {
+          let imgSrc = event.target.getAttribute('src');
+          this.setState({ previewImg: imgSrc })
+     }
+
      render() {
+          if (this.state.previewImg == "0") {
+               this.setState({ previewImg: main_img })
+          }
+
           return (
                <Fragment>
                     <Container fluid={true}>
-
                          <div className="breadbody">
                               <Breadcrumb>
                                    <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
@@ -19,8 +39,6 @@ export class ProductsDetails extends Component {
                                    <Breadcrumb.Item>Data</Breadcrumb.Item>
                               </Breadcrumb>
                          </div>
-
-
                          <Row className="p-2">
                          <Col className="shadow-sm bg-white pb-3 mt-4" md={12} lg={12} sm={12} xs={12}>
                               <Row>
@@ -28,22 +46,20 @@ export class ProductsDetails extends Component {
                                         <Row className="p-2">
                                              <Col md={2} lg={2} sm={12} xs={12} >
                                                   <Col className="p-0 m-0" >
-                                                       <img className="smallimage product-sm-img"  src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
+                                                       <img onClick={this.imgOnClick} className="smallimage product-sm-img"  src={one_img} />
                                                   </Col>
                                                   <Col className="p-0 m-0" md={12} lg={12} sm={3} xs={3}>
-                                                  <img className="smallimage product-sm-img"  src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
+                                                  <img onClick={this.imgOnClick} className="smallimage product-sm-img"  src={two_img} />
                                                   </Col>
                                                   <Col className="p-0 m-0" md={12} lg={12} sm={3} xs={3}>
-                                                  <img className="smallimage product-sm-img"  src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
+                                                  <img onClick={this.imgOnClick} className="smallimage product-sm-img"  src={three_img} />
                                                   </Col>
                                                   <Col className="p-0 m-0" md={12} lg={12} sm={3} xs={3}>
-                                                  <img className="smallimage product-sm-img"  src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
+                                                  <img onClick={this.imgOnClick} className="smallimage product-sm-img"  src={four_img} />
                                                   </Col>
                                              </Col>
                                              <Col md={10} lg={10} sm={12} xs={12} >
-                                                
-
-                                                  <InnerImageZoom zoomType={"hover"} zoomScale={1.5} className="main-image" src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" zoomSrc="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" zoomSrc="https://rukminim1.flixcart.com/image/612/612/kvcpn680/tv-entertainment-unit/0/j/s/-original-imag8a59dazfamuh.jpeg?q=70" />
+                                                  <InnerImageZoom zoomType={"hover"} zoomScale={1.5} className="main-image" src={this.state.previewImg} />
                                              </Col>
                                         </Row>
                                    </Col>
@@ -55,14 +71,12 @@ export class ProductsDetails extends Component {
                                         <h6 className="mt-2">SubCategory : <b>subcategory</b></h6>
                                         <h6 className="mt-2">Brand : <b>brand</b></h6>
                                         <h6 className="mt-2">Product Code : <b>product_code</b></h6>
-
                                         <div >
                                              <h6 className="mt-2"> Choose Color  </h6>
                                              <select className="form-control form-select">
                                                   <option disabled>Choose Color</option>
                                                   <option>Red</option>
                                                   <option>green</option>
-
                                              </select>
                                         </div>
                                         <div >
@@ -71,7 +85,6 @@ export class ProductsDetails extends Component {
                                              <option disabled>Choose Color</option>
                                              <option>Large</option>
                                              <option>small</option>
-
                                              </select>
                                         </div>
                                         <div className="" >
@@ -97,7 +110,6 @@ export class ProductsDetails extends Component {
                                         </div>
                                    </Col>
                               </Row>
-
                               <Row>
                                    <Col className="" md={6} lg={6} sm={12} xs={12}>
                                         <h6 className="mt-2">DETAILS</h6>
@@ -109,9 +121,6 @@ export class ProductsDetails extends Component {
                               </Row>
                          </Col>
                     </Row>
-
-
-
                     </Container>
                </Fragment>
           )
