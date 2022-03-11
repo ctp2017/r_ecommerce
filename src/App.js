@@ -17,13 +17,14 @@ import ForgetPasswordPage from './pages/ForgetPasswordPage'
 import ResetPasswordPage from './pages/ResetPasswordPage'
 import ProductCategoryPage from './pages/ProductCategoryPage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
+import SearchPage from './pages/SearchPage'
 export class App extends Component {
   render() {
     return (
       <Fragment>
         <TopNavbar />
         
-     <ProductDetailsPage/>
+    <SearchPage/>
 
 
 
