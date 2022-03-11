@@ -8,6 +8,7 @@ import one_img from '../../assets/images/products/product1/2.jpeg'
 import two_img from '../../assets/images/products/product1/3.jpeg'
 import three_img from '../../assets/images/products/product1/4.jpeg'
 import four_img from '../../assets/images/products/product1/5.jpeg'
+import SuggestedProduct from './SuggestedProduct';
 export class ProductsDetails extends Component {
      
      constructor(){
@@ -122,6 +123,9 @@ export class ProductsDetails extends Component {
                          </Col>
                     </Row>
                     </Container>
+
+
+                    <SuggestedProduct/>
                </Fragment>
           )
      }
