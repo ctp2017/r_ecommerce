@@ -9,6 +9,7 @@ import two_img from '../../assets/images/products/product1/3.jpeg'
 import three_img from '../../assets/images/products/product1/4.jpeg'
 import four_img from '../../assets/images/products/product1/5.jpeg'
 import SuggestedProduct from './SuggestedProduct';
+import ReviewList from './ReviewList';
 export class ProductsDetails extends Component {
      
      constructor(){
@@ -117,7 +118,7 @@ export class ProductsDetails extends Component {
                                         <p> Bank Offer10% off on Punjab National Bank Cards, up to $1500. On Orders of $5000 and aboveT&C Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth $100*Know More Partner OfferBuy this product and get upto $500 off on Flipkart FurnitureKnow More </p>
                                    </Col>
                                    <Col className="" md={6} lg={6} sm={12} xs={12}>
-                                       review 
+                                    <ReviewList/>
                                    </Col>
                               </Row>
                          </Col>
