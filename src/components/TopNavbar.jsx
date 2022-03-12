@@ -43,7 +43,7 @@ export class TopNavbar extends Component {
       <a  herf=""><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger">0</span></sup>  </a>
       <a herf=""><i className="fa h4 fa-bell"></i><sup><span className="badge text-white bg-danger">8</span></sup>  </a>
       <a className='user-icon'  herf=""><i className="fa fa-share" ></i> </a>
-      <a  className='user-icon'  herf=""><i className="fa h4 fa-address-card" ></i> </a>
+      <Link to="/profile"  className='user-icon'  herf=""><i className="fa h4 fa-address-card" ></i> </Link>
 
 
 

@@ -3,6 +3,7 @@ import Footer from '../components/common/Footer'
 import TopNavbar from '../components/TopNavbar'
 import AboutPage from '../pages/AboutPage'
 import HomePage from '../pages/HomePage'
+import OrderListPage from '../pages/OrderListPage'
 
 import {
      BrowserRouter as Router,
@@ -21,8 +22,13 @@ export class AppRouter extends Component {
 
      <Switch>
 
-          <Route exact path="/"  component={HomePage}  />
+        
 
+          <Route exact path="/" render={(props) => <HomePage {...props} key={Date.now()} /> } />
+
+          <Route exact path="/profile" render={(props) => <OrderListPage {...props} key={Date.now()} /> } />
+          
+         
 
           <Route exact path="/about" component={AboutPage} />
            
