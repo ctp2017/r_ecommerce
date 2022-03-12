@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import '../../assets/css/custom.css'
+import {Link } from 'react-router-dom'
 export class Footer extends Component {
      render() {
           return (
@@ -24,7 +25,7 @@ export class Footer extends Component {
                                    </Col>
                                    <Col className="p-2" lg={3} md={3} sm={6} >
                                         <h5 className="footer-menu-title">About Company </h5>
-                                        <a className="footer-link" >About us</a ><br></br>
+                                        <Link to ="/about" className="footer-link" >About us</Link ><br></br>
                                         <a className="footer-link">Company</a ><br></br>
                                         <a className="footer-link" >Contact us </a ><br></br>
                                    </Col>

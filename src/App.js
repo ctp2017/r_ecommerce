@@ -19,18 +19,22 @@ import ProductCategoryPage from './pages/ProductCategoryPage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
 import SearchPage from './pages/SearchPage'
 import AboutPage from './pages/AboutPage'
+import AppRouter from './router/AppRouter'
+
+import {  BrowserRouter } from "react-router-dom"
+
+
+
 export class App extends Component {
   render() {
     return (
       <Fragment>
-        <TopNavbar />
         
-    <AboutPage/>
+      <BrowserRouter>
 
+      <AppRouter/>
 
-
-        <Footer />
-
+      </BrowserRouter>
 
       </Fragment>
     )
