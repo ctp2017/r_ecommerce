@@ -26,8 +26,8 @@ export class Footer extends Component {
                                    <Col className="p-2" lg={3} md={3} sm={6} >
                                         <h5 className="footer-menu-title">About Company </h5>
                                         <Link to ="/about" className="footer-link" >About us</Link ><br></br>
-                                        <a className="footer-link">Company</a ><br></br>
-                                        <a className="footer-link" >Contact us </a ><br></br>
+                                        <Link to ="/company" className="footer-link">Company</Link><br></br>
+                                        <Link to ="/contact" className="footer-link" >Contact us </Link><br></br>
                                    </Col>
                                    <Col className="p-2" lg={3} md={3} sm={6} >
                                         <h5 className="footer-menu-title">Company Address </h5>

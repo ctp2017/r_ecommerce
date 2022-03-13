@@ -20,6 +20,8 @@ import ProductCategoryPage from '../pages/ProductCategoryPage'
 
 import ProductDetailsPage from '../pages/ProductDetailsPage'
 
+import ContactPage from '../pages/ContactPage'
+
 
 
 
@@ -68,7 +70,9 @@ export class AppRouter extends Component {
          
           
 
+          <Route exact path="/company" render={(props) => <HomePage {...props} key={Date.now()} /> } />
 
+          <Route exact path="/contact" render={(props) => <ContactPage {...props} key={Date.now()} /> } />
 
 
 
