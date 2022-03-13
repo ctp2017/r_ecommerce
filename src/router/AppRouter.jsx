@@ -4,6 +4,12 @@ import TopNavbar from '../components/TopNavbar'
 import AboutPage from '../pages/AboutPage'
 import HomePage from '../pages/HomePage'
 import OrderListPage from '../pages/OrderListPage'
+import SearchPage from '../pages/SearchPage'
+import CartListPage from '../pages/CartListPage'
+import FavoratePage from '../pages/FavoratePage'
+import NotificationPage from '../pages/NotificationPage'
+import LoginPage from '../pages/LoginPage'
+
 
 import {
      BrowserRouter as Router,
@@ -28,7 +34,15 @@ export class AppRouter extends Component {
 
           <Route exact path="/profile" render={(props) => <OrderListPage {...props} key={Date.now()} /> } />
           
-         
+          <Route exact path="/search" render={(props) => <SearchPage {...props} key={Date.now()} /> } />
+          <Route exact path="/cardlist" render={(props) => <CartListPage {...props} key={Date.now()} /> } />
+          
+          <Route exact path="/favorate" render={(props) => <FavoratePage {...props} key={Date.now()} /> } />
+          <Route exact path="/notification" render={(props) => <NotificationPage {...props} key={Date.now()} /> } />
+
+          <Route exact path="/login" render={(props) => <LoginPage {...props} key={Date.now()} /> } />
+          
+        
 
           <Route exact path="/about" component={AboutPage} />
            
