@@ -18,6 +18,11 @@ import SubCategoryPage from '../pages/SubCategoryPage'
 import ProductCategoryPage from '../pages/ProductCategoryPage'
 
 
+import ProductDetailsPage from '../pages/ProductDetailsPage'
+
+
+
+
 
 import {
      BrowserRouter as Router,
@@ -58,7 +63,9 @@ export class AppRouter extends Component {
 
           <Route exact path="/category" render={(props) => <ProductCategoryPage {...props} key={Date.now()} /> } />
 
-          
+          <Route exact path="/productdetails" render={(props) => <ProductDetailsPage {...props} key={Date.now()} /> } />
+
+         
           
 
 

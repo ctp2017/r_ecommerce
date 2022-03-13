@@ -4,6 +4,7 @@ import { Container, Row, Card } from 'react-bootstrap'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 export class NewArrival extends Component {
 
 
@@ -51,6 +52,7 @@ constructor(){
                          <Row>
                               <Slider ref={c=>(this.slider=c)}  {...settings}>
                                    <div>
+                                   <Link to="/productdetails">
                                         <Card className="image-box card" >
                                              <img className="center" src="http://127.0.0.1:8000/upload/product/1724905152389272.jpeg" />
                                              <Card.Body>
@@ -58,10 +60,12 @@ constructor(){
                                                   <p className="product-price-on-card">price : 100$</p>
                                              </Card.Body>
                                         </Card>
+                                        </Link>
                                    </div>
 
 
                                    <div>
+                                   <Link to="/productdetails">
                                    <Card className="image-box card" >
                                         <img className="center" src="http://127.0.0.1:8000/upload/product/1724905152389272.jpeg" />
                                         <Card.Body>
@@ -69,6 +73,7 @@ constructor(){
                                              <p className="product-price-on-card">price : 100$</p>
                                         </Card.Body>
                                    </Card>
+                                   </Link>
                               </div>
 
                               <div>
