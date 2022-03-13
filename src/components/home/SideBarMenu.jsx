@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../../assets/css/custom.css'
+import { Link } from 'react-router-dom'
 import Cat1 from '../../assets/images/categories/lights.png'
 export class SideBarMenu extends Component {
 
@@ -50,9 +51,9 @@ Menu(){
                          </button>
                          <div className="panel">
                               <ul>
-                                   <li><a href="#" className="accordionItem" > Sofa</a></li>
-                                   <li><a href="#" className="accordionItem" > Beds</a></li>
-                                   <li><a href="#" className="accordionItem" > Tv Units </a></li>
+                                   <li><Link to="/subcategory"  className="accordionItem" > Sofa</Link></li>
+                                   <li><Link to="/subcategory" className="accordionItem" > Beds</Link></li>
+                                   <li><Link to="/subcategory" className="accordionItem" > Tv Units </Link></li>
                               </ul>
                          </div>
                          <button className="accordion">
