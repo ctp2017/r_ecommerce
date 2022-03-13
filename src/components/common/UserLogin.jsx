@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import LoginImg from '../../assets/images/login.webp'
+import {Link } from 'react-router-dom'
 
 export class UserLogin extends Component {
   render() {
@@ -22,8 +23,9 @@ export class UserLogin extends Component {
                                <Button type="submit" className="btn btn-block m-2 site-btn-login"> Login </Button>
                                <br></br> <br></br>
                                <hr />
-                               <p> <b> Forget My Password? </b><a ><b> Froget Password </b> </a> </p>
-                               <p> <b> New User ? </b><a><b> Register </b> </a> </p>
+                               <p> <b> Forget My Password? </b><Link to="/forgetpassword" ><b> Froget Password </b> </Link> </p>
+                             
+                               <p> <b> New User ? </b><Link to="/register" ><b> Register </b> </Link> </p>
                           </Form>
                      </Col>
 

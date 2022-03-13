@@ -1,5 +1,6 @@
 import React, { Component,Fragment } from 'react'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+import {Link } from 'react-router-dom'
 export class ForgetPassword extends Component {
   render() {
     return (
@@ -20,8 +21,8 @@ export class ForgetPassword extends Component {
                               <Button type="submit" className="btn btn-block m-2 site-btn-login"> Rest Password </Button>
                               <br></br> <br></br>
                               <hr />
-                              <p> <b> Forget My Password? </b><a ><b> Froget Password </b> </a> </p>
-                              <p> <b> New User ? </b><a><b> Register </b> </a> </p>
+                              <p> <b> Already Have An Account ? </b><Link to="/login"><b> Login </b> </Link> </p>
+                              <p> <b> New User ? </b><Link to="/register" ><b> Register </b> </Link> </p>
                          </Form>
                     </Col>
 

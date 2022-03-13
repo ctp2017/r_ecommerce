@@ -9,6 +9,8 @@ import CartListPage from '../pages/CartListPage'
 import FavoratePage from '../pages/FavoratePage'
 import NotificationPage from '../pages/NotificationPage'
 import LoginPage from '../pages/LoginPage'
+import ForgetPasswordPage from '../pages/ForgetPasswordPage'
+import RegisterPage from '../pages/RegisterPage'
 
 
 import {
@@ -42,7 +44,9 @@ export class AppRouter extends Component {
 
           <Route exact path="/login" render={(props) => <LoginPage {...props} key={Date.now()} /> } />
           
-        
+          <Route exact path="/forgetpassword" render={(props) => <ForgetPasswordPage {...props} key={Date.now()} /> } />
+
+          <Route exact path="/register" render={(props) => <RegisterPage {...props} key={Date.now()} /> } />
 
           <Route exact path="/about" component={AboutPage} />
            
