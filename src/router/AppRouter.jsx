@@ -13,6 +13,12 @@ import ForgetPasswordPage from '../pages/ForgetPasswordPage'
 import RegisterPage from '../pages/RegisterPage'
 
 import SubCategoryPage from '../pages/SubCategoryPage'
+
+
+import ProductCategoryPage from '../pages/ProductCategoryPage'
+
+
+
 import {
      BrowserRouter as Router,
      Switch,
@@ -50,6 +56,9 @@ export class AppRouter extends Component {
 
           <Route exact path="/subcategory" render={(props) => <SubCategoryPage {...props} key={Date.now()} /> } />
 
+          <Route exact path="/category" render={(props) => <ProductCategoryPage {...props} key={Date.now()} /> } />
+
+          
           
 
 

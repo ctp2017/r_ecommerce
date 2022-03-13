@@ -2,6 +2,11 @@ import React, { Component, Fragment } from 'react'
 import CartList from '../components/Cart/CartList'
 import {Container} from 'react-bootstrap'
 export class CartListPage extends Component {
+  constructor(){
+    super();
+    window.scroll(0,0)
+    
+    }
   render() {
     return (
     <Fragment>
