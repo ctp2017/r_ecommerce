@@ -208,3 +208,9 @@
     font-weight: 400;
 
  }
+
+
+ .text-link{
+    color: inherit;
+    text-decoration: inherit;
+}

@@ -15,7 +15,7 @@ export class Featured extends Component {
 
    <Col className="p-1" lg={2} md={2} sm={6} >
         <div>
-        <Link to="/productdetails">
+        <Link className="text-link" to="/productdetails">
              <Card className="image-box card w-100" >
                   <img className="center" src="http://127.0.0.1:8000/upload/product/1724910411285630.jpeg" />
                   <Card.Body>
@@ -30,7 +30,7 @@ export class Featured extends Component {
 
     <Col className="p-1" lg={2} md={2} sm={6} >
     <div>
-    <Link to="/productdetails">
+    <Link className="text-link" to="/productdetails">
          <Card className="image-box card w-100" >
               <img className="center w-75" src="http://127.0.0.1:8000/upload/product/1724918399859789.jpeg" />
               <Card.Body>
