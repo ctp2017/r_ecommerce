@@ -20,6 +20,19 @@ export class Featured extends Component {
                   <img className="center" src="http://127.0.0.1:8000/upload/product/1724910411285630.jpeg" />
                   <Card.Body>
                        <p className="product-name-on-card">Perfect Homes Webster Engineered Wood TV</p>
+
+                       <div>
+                       <span className="text-warning">
+                       <i className="fa fa-star"></i> 
+                        <i className="fa fa-star"></i> 
+                        <i className="fa fa-star"></i>
+                       </span>
+                        <span >
+                          <i className="fa fa-star">
+                         </i> <i className="fa fa-star"></i> 
+                         </span>
+                       </div>
+
                        <p className="product-price-on-card">price : 100$</p>
                   </Card.Body>
              </Card>
@@ -35,6 +48,22 @@ export class Featured extends Component {
               <img className="center w-75" src="http://127.0.0.1:8000/upload/product/1724918399859789.jpeg" />
               <Card.Body>
                    <p className="product-name-on-card">Perfect Homes Webster Engineered Wood TV</p>
+
+                   <div>
+                   <span className="text-warning">
+                   <i className="fa fa-star"></i> 
+                    <i className="fa fa-star"></i> 
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"> </i>
+                   </span>
+                    <span >
+                     
+                     <i className="fa fa-star"></i> 
+                     </span>
+                   </div>
+
+
+
                    <p className="product-price-on-card">price : 100$</p>
               </Card.Body>
          </Card>
@@ -48,6 +77,19 @@ export class Featured extends Component {
                   <img className="center w-75" src="http://127.0.0.1:8000/upload/product/1724910411285630.jpeg" />
                   <Card.Body>
                        <p className="product-name-on-card">Perfect Homes Webster Engineered Wood TV</p>
+                       <div>
+                       <span className="text-warning">
+                       <i className="fa fa-star"></i> 
+                        <i className="fa fa-star"></i> 
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"> </i>
+                       </span>
+                        <span >
+                         
+                         <i className="fa fa-star"></i> 
+                         </span>
+                       </div>
+    
                        <p className="product-price-on-card">price : 100$</p>
                   </Card.Body>
              </Card>
@@ -61,6 +103,19 @@ export class Featured extends Component {
               <img className="center w-75" src="http://127.0.0.1:8000/upload/product/1724918399859789.jpeg" />
               <Card.Body>
                    <p className="product-name-on-card">Perfect Homes Webster Engineered Wood TV</p>
+                   <div>
+                   <span className="text-warning">
+                   <i className="fa fa-star"></i> 
+                    <i className="fa fa-star"></i> 
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"> </i>
+                   </span>
+                    <span >
+                     
+                     <i className="fa fa-star"></i> 
+                     </span>
+                   </div>
+
                    <p className="product-price-on-card">price : 100$</p>
               </Card.Body>
          </Card>
@@ -72,6 +127,19 @@ export class Featured extends Component {
                   <img className="center w-75" src="http://127.0.0.1:8000/upload/product/1724910411285630.jpeg" />
                   <Card.Body>
                        <p className="product-name-on-card">Perfect Homes Webster Engineered Wood TV</p>
+                       <div>
+                       <span className="text-warning">
+                       <i className="fa fa-star"></i> 
+                        <i className="fa fa-star"></i> 
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"> </i>
+                       </span>
+                        <span >
+                         
+                         <i className="fa fa-star"></i> 
+                         </span>
+                       </div>
+    
                        <p className="product-price-on-card">price : 100$</p>
                   </Card.Body>
              </Card>
@@ -85,6 +153,19 @@ export class Featured extends Component {
               <img className="center w-75" src="http://127.0.0.1:8000/upload/product/1724918399859789.jpeg" />
               <Card.Body>
                    <p className="product-name-on-card">Perfect Homes Webster Engineered Wood TV</p>
+                   <div>
+                   <span className="text-warning">
+                   <i className="fa fa-star"></i> 
+                    <i className="fa fa-star"></i> 
+                    <i className="fa fa-star"></i>
+                    <i className="fa fa-star"> </i>
+                   </span>
+                    <span >
+                     
+                     <i className="fa fa-star"></i> 
+                     </span>
+                   </div>
+
                    <p className="product-price-on-card">price : 100$</p>
               </Card.Body>
          </Card>
