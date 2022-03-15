@@ -1,5 +1,52 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment, useState } from 'react'
 import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap'
+
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+
+const StarRating = (props) => {
+    
+     const [rating , setRating] = useState(null);
+     const [hover , setHover] = useState(null);
+
+     return (
+       <Fragment>
+       <form>
+       {[...Array(5)].map((star , i)=>{
+           const ratingValue = i + 1 ;
+        return (
+            <label>
+           
+            <FontAwesomeIcon
+            className="star"
+             icon={faStar}
+             color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"} 
+             onMouseEnter={() => setHover(ratingValue)}
+             onMouseLeave={() => setHover(null)}
+
+             onClick={() => setRating(ratingValue)}
+
+             name="rating"
+             id='rate'
+             value={ratingValue} 
+            
+           
+             />
+            </label>
+        );
+       })} 
+       <p className='text-center mt-2'>your rating is  :{rating} </p>
+        
+       </form>
+       </Fragment>
+     )
+     };
+  
+
+
+
 export class OrderList extends Component {
 
      constructor() {
@@ -123,6 +170,8 @@ export class OrderList extends Component {
                     </div>
                     <div className="col-md-12 p-1 col-lg-12 col-sm-12 col-12">
                     <label className="form-label">Your review </label>
+
+                    <StarRating/>
                    
                     </div>
 
