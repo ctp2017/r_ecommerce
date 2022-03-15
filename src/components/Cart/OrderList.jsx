@@ -1,7 +1,27 @@
 import React, { Component, Fragment } from 'react'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap'
 export class OrderList extends Component {
+
+     constructor() {
+          super();
+          this.state = {
+               show: false,
+          }
+     }
+
+     handleClose = () => {
+          this.setState({ show: false })
+     };
+     handleShow = () => {
+          this.setState({ show: true });
+     };
+
+
      render() {
+
+
+
+
           return (
                <Fragment>
                     <Container className="text-center" fluid={true}>
@@ -32,7 +52,7 @@ export class OrderList extends Component {
                                                   <h6>Price = 10 x 7 = 70$</h6>
                                                   <h6>Stauts = pending </h6>
                                              </Col>
-                                             <Button className="btn btn-danger">Post Review </Button>
+                                             <Button onClick={this.handleShow} className="btn btn-danger">Post Review </Button>
                                              <hr></hr>
                                         </div>
 
@@ -82,6 +102,44 @@ export class OrderList extends Component {
                          </Card>
 
                     </Container>
+
+
+
+                    <Modal show={this.state.show} onHide={this.handleClose}>
+                         <Modal.Header closeButton>
+                              <Modal.Title>Add your review</Modal.Title>
+                         </Modal.Header>
+                         <Modal.Body>
+
+
+                         <div className="col-md-12 p-1 col-lg-12 col-sm-12 col-12">
+                         <label className="form-label">Your Name</label>
+                         <input className="form-control" type="text" placeholder="Nizar" />
+                    </div>
+
+                    <div className="col-md-12 p-1 col-lg-12 col-sm-12 col-12">
+                         <label className="form-label">Your Comment</label>
+                         <textarea rows={2} className="form-control" type="text" placeholder="Your Comment" />
+                    </div>
+                    <div className="col-md-12 p-1 col-lg-12 col-sm-12 col-12">
+                    <label className="form-label">Your review </label>
+                   
+                    </div>
+
+
+                             
+
+
+
+                         </Modal.Body>
+                         <Modal.Footer>
+                              <Button onClick={this.handleShow} variant="secondary" onClick={this.handleClose}>
+                                   Close
+                              </Button>
+                         </Modal.Footer>
+                    </Modal>
+
+
                </Fragment>
           )
      }
